@@ -58,5 +58,17 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "![AECTech 2021 3D Viewer Logo](/assets/images/logo_text.png)",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tt-acm/aectech2021-3dviewer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tt-acm/aectech2021-3dviewer/issues"
+  },
+  "homepage": "https://github.com/tt-acm/aectech2021-3dviewer#readme"
 }
