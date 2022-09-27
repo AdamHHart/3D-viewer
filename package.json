@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tt-acm/aectech2021-3dviewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tt-acm/aectech2021-3dviewer/issues"
+  },
+  "homepage": "https://github.com/tt-acm/aectech2021-3dviewer#readme"
 }
