@@ -1,17 +1,73 @@
 {
   "name": "aectech2021-3dviewer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "npm run build",
+    "start": "node server/server.js",
+    "dev": "concurrently \"nodemon server/server.js\" \"npm run serve\""
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "core-js": "^3.6.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase": "^8.10.0",
+    "firebaseui": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.3",
+    "roboto-fontface": "^0.10.0",
+    "three": "^0.133.1",
+    "vue": "^2.6.11",
+    "vue-cli-plugin-vuetify": "^2.4.3",
+    "vuetify": "^2.5.10",
+    "vuetify-loader": "^1.7.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "babel-eslint": "^10.1.0",
+    "deepmerge": "^4.2.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.43.3",
+    "sass-loader": "10.1.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "description": "![AECTech 2021 3D Viewer Logo](/assets/images/logo_text.png)",
+  "main": "babel.config.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tt-acm/aectech2021-3dviewer.git"
   },
+  "author": "",
+  "license": "ISC",
+
   "bugs": {
     "url": "https://github.com/tt-acm/aectech2021-3dviewer/issues"
   },
